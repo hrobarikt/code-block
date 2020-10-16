@@ -1,0 +1,34 @@
+@import '@servicenow/sass-kit/host';
+@import "../../node_modules/prismjs/themes/prism.css";
+
+:host {
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.55) 0 8px 16px;
+    border-radius: var(--now-code-block-radius, 7px);
+    margin-bottom: 2em;
+}
+
+slot {
+    display: none;
+}
+
+pre {
+    border-radius: var(--now-code-block-radius, 7px);    
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.window-controls {
+    position: absolute;
+    left: 0;
+}
+
+.code-block {
+    padding-top: 1.5em;
+}
