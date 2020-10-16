@@ -4,7 +4,7 @@ A code-block element that can be used for rendering code snippets inside of the 
 
 Example
 ---
-
+![image](https://user-images.githubusercontent.com/19704768/96255967-1d9a9080-0fb8-11eb-818a-36236360a2cb.png)
 
 Usage
 ---
