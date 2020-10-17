@@ -4,6 +4,7 @@ import styles from "./styles.scss";
 import view from "./view";
 import codeblockActions from "./actions";
 import "prismjs/plugins/line-numbers/prism-line-numbers";
+import "prismjs/plugins/line-highlight/prism-line-highlight";
 
 /**
  * A code-block element that can be used for rendering code snippets inside of the HTML. It is using PrismJS

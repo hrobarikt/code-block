@@ -14,7 +14,8 @@ slot {
 }
 
 pre {
-    border-radius: var(--now-code-block-radius, 7px);
+    border-bottom-left-radius: var(--now-code-block-radius, 7px);
+    border-bottom-right-radius: var(--now-code-block-radius, 7px);
 }
 
 .code-header {
@@ -22,14 +23,16 @@ pre {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-bottom: 1em;
+    padding-top: 1em;
+    border-top-left-radius: var(--now-code-block-radius, 7px);
+    border-top-right-radius: var(--now-code-block-radius, 7px);
 }
 
-pre.line-numbers .code-header {
-    margin-left: -2em;
+label.code-header + pre {
+    margin-top: 0;
 }
 
 .window-controls {
     position: absolute;
-    left: 0;
+    left: 1em;
 }
