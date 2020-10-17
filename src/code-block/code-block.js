@@ -52,6 +52,16 @@ createCustomElement("code-block", {
 				type: "string",
 
 			}
+		},
+		/**
+		 * If specified, it will also display the line numbers
+		 * @type {boolean}
+		 */
+		lineNumbers: {
+			default: false,
+			schema: {
+				type: "boolean"
+			}
 		}
 	},
 	view,
