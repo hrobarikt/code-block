@@ -1,4 +1,6 @@
 @import "@servicenow/sass-kit/host";
+@import "../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css";
+@import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css";
 
 :host {
     display: block;
@@ -20,14 +22,14 @@ pre {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+}
+
+pre.line-numbers .code-header {
+    margin-left: -2em;
 }
 
 .window-controls {
     position: absolute;
     left: 0;
-}
-
-.code-block {
-    padding-top: 1.5em;
 }

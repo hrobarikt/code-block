@@ -3,6 +3,7 @@ import snabbdom from "@servicenow/ui-renderer-snabbdom";
 import styles from "./styles.scss";
 import view from "./view";
 import codeblockActions from "./actions";
+import "prismjs/plugins/line-numbers/prism-line-numbers";
 
 /**
  * A code-block element that can be used for rendering code snippets inside of the HTML. It is using PrismJS

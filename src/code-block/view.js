@@ -6,8 +6,9 @@ export default (state) => {
 	return (
 		<div>
 			{themeLoader(properties.theme)}
-			<pre>
+			<pre className="line-numbers">
 				<CodeHeader label={properties.label} />
+
 				<code className={`language-${properties.language}  code-block`}></code>
 			</pre>
 			<slot></slot>
