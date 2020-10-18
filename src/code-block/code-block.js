@@ -26,6 +26,13 @@ import "prismjs/plugins/line-highlight/prism-line-highlight";
  * */
 createCustomElement("code-block", {
 	renderer: { type: snabbdom },
+	initialState: {
+		/**
+		 * Used to determine the label of copy button
+		 * @type {string}
+		 */
+		copyLabel: "Copy"
+	},
 	properties: {
 		/**
 		 * Label that will be displayed in the code header.
@@ -81,6 +88,16 @@ createCustomElement("code-block", {
 		highlightLines: {
 			schema: {
 				type: "string"
+			}
+		},
+		/**
+		 * When set to true, it will not display the copy to clipboard button
+		 * @type {boolean}
+		 */
+		copyDisabled: {
+			default: false,
+			schema: {
+				type: "boolean"
 			}
 		}
 	},

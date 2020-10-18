@@ -25,4 +25,14 @@ createCustomElement('code-block', {
 });
 
 </code-block>
+
+
+<code-block language="html" theme="synthwave84" copy-disabled="true">
+&lt;template&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;script&gt;&lt;/script&gt;
+	&lt;a&gt;Some hyperlink&lt;/a&gt;
+	&lt;p&gt;lorem ipsum&lt;/p&gt;
+&lt;/template&gt;
+</code-block>
 `;

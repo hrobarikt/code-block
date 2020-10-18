@@ -1,12 +1,16 @@
 import CodeHeader from "./CodeHeader";
 import themeLoader from "./themes/themeLoader";
+import "@servicenow/now-button";
+import { COPY_CLICKED } from "./actions";
 
-export default (state) => {
+export default (state, { dispatch }) => {
 	const { properties } = state;
 	return (
-		<div>
+		<div className="code-block">
 			{themeLoader(properties.theme)}
+			<now-button class={{ "is-disabled": properties.copyDisabled, "copy-button": true }} label={state.copyLabel} variant="secondary" size="md" icon="documents-outline" tooltipContent="Copy the code to clipboard" on-click={() => { dispatch(COPY_CLICKED) }}></now-button>
 			<CodeHeader label={properties.label} />
+
 			<pre class={{ "line-numbers": properties.lineNumbers }} data-line={properties.highlightLines}>
 
 				<code className={`language-${properties.language}  code-block`}></code>
