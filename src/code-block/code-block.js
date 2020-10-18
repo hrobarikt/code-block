@@ -63,6 +63,25 @@ createCustomElement("code-block", {
 			schema: {
 				type: "boolean"
 			}
+		},
+		/**
+		 * Specify the lines to be highlighted in the code following the simple format:
+		 * - A single number refers to the line with that number
+		 * - Ranges are denoted by two numbers, separated with a hyphen (-)
+		 * - Multiple line numbers or ranges are separated by commas
+		 * - Whitespace is allowed anywhere and will be stripped off.
+		 * @example
+		 * 5: the 5th line
+		 * 1-5: lines 1 through 5
+		 * 1,4: Line 1 and 4
+		 * 1-2, 5, 9-20: Lines 1 through 2, line 5, lines 9 through 20
+		 * @type {string}
+		 * 		 
+		 */
+		highlightLines: {
+			schema: {
+				type: "string"
+			}
 		}
 	},
 	view,
