@@ -13,9 +13,10 @@ slot {
     display: none;
 }
 
-pre {
+.code-block pre[class*="language-"] {
     border-bottom-left-radius: var(--now-code-block-radius, 7px);
     border-bottom-right-radius: var(--now-code-block-radius, 7px);
+    margin-top: 0;
 }
 
 .code-header {
@@ -28,11 +29,27 @@ pre {
     border-top-right-radius: var(--now-code-block-radius, 7px);
 }
 
-label.code-header + pre {
-    margin-top: 0;
-}
-
 .window-controls {
     position: absolute;
     left: 1em;
+}
+
+.code-block {
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    &.is-disabled {
+        display: none;
+    }
+}
+
+.code-block:hover .copy-button {
+    opacity: 1;
 }

@@ -18,14 +18,16 @@
 		"@servicenow/cli-archetype": "18.0.0",
 		"@servicenow/cli-component-archetype": "18.0.0",
 		"@servicenow/library-translate": "paris",
+		"@servicenow/now-button": "^18.4.2",
 		"@servicenow/sass-kit": "paris",
 		"@servicenow/sass-theme": "paris",
 		"@servicenow/ui-core": "paris",
 		"@servicenow/ui-renderer-snabbdom": "paris",
+		"copy-to-clipboard": "^3.3.1",
 		"prismjs": "^1.22.0"
 	},
 	"devDependencies": {
 		"@servicenow/cli-archetype-dev": "18.0.0",
-		"@servicenow/cli-component-archetype-dev": "18.0.0"
+		"@servicenow/cli-component-archetype-dev": "18.0.0",
 	}
 }
