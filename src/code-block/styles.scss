@@ -1,5 +1,4 @@
-@import '@servicenow/sass-kit/host';
-@import "../../node_modules/prismjs/themes/prism.css";
+@import "@servicenow/sass-kit/host";
 
 :host {
     display: block;
@@ -13,7 +12,7 @@ slot {
 }
 
 pre {
-    border-radius: var(--now-code-block-radius, 7px);    
+    border-radius: var(--now-code-block-radius, 7px);
 }
 
 .code-header {

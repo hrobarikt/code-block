@@ -41,6 +41,17 @@ createCustomElement("code-block", {
 				enum: ["javascript", "css", "clike", "markup", "html", "xml", "svg"],
 			},
 		},
+		/**
+		 * Specifies a visual theme applied to syntax highlighting
+		 * @type {string}
+		 */
+		theme: {
+			default: "prism",
+			schema: {
+				type: "string",
+
+			}
+		}
 	},
 	view,
 	...codeblockActions,
