@@ -1,0 +1,15 @@
+{
+	"components": {
+		"code-block": {
+			"innerComponents": [],
+			"uiBuilder": {
+				"associatedTypes": ["global.core", "global.landing-page"],
+				"label": "Code block",
+				"icon": "document-outline",
+				"description": "highlight the syntax for the code",
+				"category": "primitives"
+			}
+		}
+	},
+	"scopeName": "x_now_code_block"
+}
