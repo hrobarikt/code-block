@@ -6,8 +6,9 @@ export default (state) => {
 	return (
 		<div>
 			{themeLoader(properties.theme)}
-			<pre>
-				<CodeHeader label={properties.label} />
+			<CodeHeader label={properties.label} />
+			<pre class={{ "line-numbers": properties.lineNumbers }} data-line={properties.highlightLines}>
+
 				<code className={`language-${properties.language}  code-block`}></code>
 			</pre>
 			<slot></slot>

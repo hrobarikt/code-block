@@ -14,7 +14,9 @@ export default {
 			const {
 				host
 			} = coeffects;
-			host.shadowRoot.querySelector("code").innerHTML = host.innerHTML;
+
+			//strip the lead/end newlines so the line numbers are displayed correctly
+			host.shadowRoot.querySelector("code").innerHTML = host.innerHTML.replace(/^\s+|\s+$/g, '');
 			Prism.highlightElement(host.shadowRoot.querySelector("code"));
 		}
 	}

@@ -6,7 +6,7 @@ import ghcolors from "./styles/ghcolors.css";
 import vs from "./styles/vs.css";
 import synthwave84 from "./styles/synthwave84.css";
 import shadesofpurple from "./styles/shades-of-purple.css";
-import prism from "../../../node_modules/prismjs/themes/prism.css";
+import prism from "./styles/prism.css";
 import xonokai from "./styles/xonokai.css";
 import vsdark from "./styles/vsc-dark-plus.css";
 import nord from "./styles/nord.css";
