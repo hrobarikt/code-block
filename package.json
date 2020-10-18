@@ -28,6 +28,6 @@
 	},
 	"devDependencies": {
 		"@servicenow/cli-archetype-dev": "18.0.0",
-		"@servicenow/cli-component-archetype-dev": "18.0.0",
+		"@servicenow/cli-component-archetype-dev": "18.0.0"
 	}
 }
