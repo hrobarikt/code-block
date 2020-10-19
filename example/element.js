@@ -35,4 +35,17 @@ createCustomElement('code-block', {
 	&lt;p&gt;lorem ipsum&lt;/p&gt;
 &lt;/template&gt;
 </code-block>
+
+<code-block language="javascript" theme="synthwave84" line-numbers="true">
+console
+</code-block>
+
+
+<code-block language="jsx" theme="synthwave84" line-numbers="true">
+render() {
+	return &lt;h2>Fancy heading&lt;/h2>
+}
+</code-block>
+
+
 `;
