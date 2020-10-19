@@ -53,3 +53,11 @@ slot {
 .code-block:hover .copy-button {
     opacity: 1;
 }
+
+.line-numbers-rows {
+    display: none;
+}
+
+.line-numbers .line-numbers-rows {
+    display: block;
+}
