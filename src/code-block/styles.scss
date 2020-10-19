@@ -27,6 +27,7 @@ slot {
     padding-top: 1em;
     border-top-left-radius: var(--now-code-block-radius, 7px);
     border-top-right-radius: var(--now-code-block-radius, 7px);
+    z-index: 1;
 }
 
 .window-controls {
