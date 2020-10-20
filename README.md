@@ -10,10 +10,10 @@ Other suggestions for improvement are welcomed 👋
 - copy to clipboard 📋
 - line numbering 🔢
 - line highligting 📄
+- supports [234 languages](https://prismjs.com/#supported-languages)
 
 ## TODO:
 
-- provide support for more languages - enable autoloading of additional languages
 - refactor themes, extract common styling, don't mix different font styles and sizes
 
 ## Example
@@ -21,6 +21,10 @@ Other suggestions for improvement are welcomed 👋
 ![image](https://user-images.githubusercontent.com/19704768/96255967-1d9a9080-0fb8-11eb-818a-36236360a2cb.png)
 
 ## Usage
+
+Just put the desired code inside of the code-block element.
+
+❗For HTML you need to replace reserved characters in HTML (<,>,'',&) otherwise it could be wrongfully interpreted as markup.
 
 ```jsx
 
@@ -56,3 +60,17 @@ styles
 | lineNumbers    | `boolean` | If specified, it will also display the line numbers                         | false      |
 | highlightLines | `string`  | Specify the lines to be highlighted in the code following the simple format |            |
 | copyDisabled   | `boolean` | When set to true, it will not display the copy to clipboard button          | false      |
+| showHeader     | `boolean` | Adds a fancy header with macOS like window controls                         | false      |
+
+## CSS Custom Properties:
+
+Styling can be overriden with the following properties:
+
+| name                     | default             |
+| ------------------------ | ------------------- |
+| --now-code-block-radius: | 7px                 |
+| --box-shadow-offset-x    | 0                   |
+| --box-shadow-offset-y    | 8px                 |
+| --box-shadow-blur        | 16px                |
+| --box-shadow-spread      | 0                   |
+| --box-shadow-color       | rgba(0, 0, 0, 0.55) |
