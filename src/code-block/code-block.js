@@ -35,19 +35,19 @@ createCustomElement("code-block", {
 	},
 	properties: {
 		/**
-		 * Label that will be displayed in the code header.
+		 * Label that will be displayed in the code header. It will also 
+		 * automatically display a header
 		 * @type {string}
 		 */
 		label: { schema: { type: "string" } },
 		/**
 		 * Sets the code language that will be used for syntax highlighting
-		 * @type {("javascript"|"css"|"clike"|"markup"|"html"|"xml"|"svg")}
+		 * @type {string}
 		 */
 		language: {
 			default: "javascript",
 			schema: {
-				type: "string",
-				enum: ["javascript", "css", "clike", "markup", "html", "xml", "svg"],
+				type: "string"
 			},
 		},
 		/**
@@ -95,6 +95,16 @@ createCustomElement("code-block", {
 		 * @type {boolean}
 		 */
 		copyDisabled: {
+			default: false,
+			schema: {
+				type: "boolean"
+			}
+		},
+		/**
+		 * Adds a fancy header with macOS like window controls
+		 * @type {boolean}
+		 */
+		showHeader: {
 			default: false,
 			schema: {
 				type: "boolean"

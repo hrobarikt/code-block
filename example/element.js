@@ -41,7 +41,7 @@ console
 </code-block>
 
 
-<code-block language="jsx" theme="synthwave84" line-numbers="true">
+<code-block language="jsx" theme="synthwave84" line-numbers="true" show-header>
 render() {
 	return &lt;h2>Fancy heading&lt;/h2>
 }
