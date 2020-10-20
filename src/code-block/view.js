@@ -15,6 +15,7 @@ export default (state, { dispatch }) => {
 
 				<code className={`language-${properties.language}`}></code>
 			</pre>
+			<slot></slot>
 		</div>
 	);
 };
