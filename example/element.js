@@ -4,7 +4,7 @@ const el = document.createElement('DIV');
 document.body.appendChild(el);
 
 el.innerHTML = `		
-<code-block label="code-block.js" language="javascript" line-numbers highlight-lines="2,4,10-13">
+<code-block label="code-block.js" language="javascript" line-numbers highlight-lines="2,4,10-13" show-window-controls>
 import {createCustomElement} from '@servicenow/ui-core';
 import snabbdom from '@servicenow/ui-renderer-snabbdom';
 import styles from './styles.scss';
@@ -27,7 +27,7 @@ createCustomElement('code-block', {
 </code-block>
 
 
-<code-block language="html" theme="synthwave84" copy-disabled="true">
+<code-block language="html" theme="synthwave84" label="index.html" copy-disabled="true">
 &lt;template&gt;
 &lt;body&gt;&lt;/body&gt;
 &lt;script&gt;&lt;/script&gt;
