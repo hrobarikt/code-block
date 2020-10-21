@@ -101,10 +101,10 @@ createCustomElement("code-block", {
 			}
 		},
 		/**
-		 * Adds a fancy header with macOS like window controls
+		 * When enabled display the macOS like window controls
 		 * @type {boolean}
 		 */
-		showHeader: {
+		showWindowControls: {
 			default: false,
 			schema: {
 				type: "boolean"

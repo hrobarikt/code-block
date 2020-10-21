@@ -20,11 +20,6 @@
     margin-top: 0;
 }
 
-:not(.code-header) + pre {
-    border-top-left-radius: var(--now-code-block-radius, 7px);
-    border-top-right-radius: var(--now-code-block-radius, 7px);
-}
-
 .code-header {
     display: flex;
     align-items: center;
