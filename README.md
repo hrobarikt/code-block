@@ -3,6 +3,8 @@
 A code-block element that can be used for rendering code snippets inside of the HTML. It is using [PrismJS](https://prismjs.com/) for syntax highlighting.
 Other suggestions for improvement are welcomed 👋
 
+To play 🕹 with a component visit this [website](https://hrobarikt.github.io/code-block).
+
 ## Features:
 
 - syntax highlighting 🚥
@@ -52,15 +54,15 @@ styles
 
 ## Properties:
 
-| Param          | Type      | Description                                                                 | Default    |
-| -------------- | --------- | --------------------------------------------------------------------------- | ---------- |
-| label          | `string`  | Label that will be displayed in the code header                             |            |
-| language       | `string`  | Sets the code language that will be used for syntax highlighting            | javascript |
-| theme          | `string`  | Specifies a visual theme applied to syntax highlighting                     | prism      |
-| lineNumbers    | `boolean` | If specified, it will also display the line numbers                         | false      |
-| highlightLines | `string`  | Specify the lines to be highlighted in the code following the simple format |            |
-| copyDisabled   | `boolean` | When set to true, it will not display the copy to clipboard button          | false      |
-| showHeader     | `boolean` | Adds a fancy header with macOS like window controls                         | false      |
+| Param              | Type      | Description                                                                 | Default    |
+| ------------------ | --------- | --------------------------------------------------------------------------- | ---------- |
+| label              | `string`  | Label that will be displayed in the code header                             |            |
+| language           | `string`  | Sets the code language that will be used for syntax highlighting            | javascript |
+| theme              | `string`  | Specifies a visual theme applied to syntax highlighting                     | prism      |
+| lineNumbers        | `boolean` | If specified, it will also display the line numbers                         | false      |
+| highlightLines     | `string`  | Specify the lines to be highlighted in the code following the simple format |            |
+| copyDisabled       | `boolean` | When set to true, it will not display the copy to clipboard button          | false      |
+| showWindowControls | `boolean` | Display a macOS like window controls                                        | false      |
 
 ## CSS Custom Properties:
 
